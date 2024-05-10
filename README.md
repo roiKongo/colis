@@ -4,16 +4,16 @@
 <a href="https://github.com/colis/framework/actions"><img src="https://github.com/roiKongo/framework/workflows/tests/badge.svg" alt="Build Status"></a>
 </p>
 
-## Campost App
+## Colis Manager
 
-C'est une application consu pour  gerer les transactions de colis campost ou agence de voyage
+C'est une application consu pour genere les colis d'agence,voyage,compost etc
 
 - [Simple,creation des agences](https://roikongo.com/docs/agences).
 - [create des voyages colis](https://roiKongo.com/docs/voyage).
 
 - gestion ,des clients [Clients](https://roiKongo.com/docs/clients).
-- Envoi d'sms personnalisé au recepteur [sms Personnaliser](https://roiKongo.com/docs/sms).
+- Envoi d'sms personnalisé au recepteur [sms Personnaliser](https://roiKongo.com/docs/sms
 
-c'est une application robuste et  utiles
+tous ce que vous avez besoin pour gerer  vos  colis
 
 

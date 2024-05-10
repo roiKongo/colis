@@ -3,6 +3,7 @@
 namespace App\Http;
 
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
+use App\Http\Middleware\canInstall;
 
 class Kernel extends HttpKernel
 {
@@ -64,5 +65,18 @@ class Kernel extends HttpKernel
         'signed' => \App\Http\Middleware\ValidateSignature::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
+
+          /*
+        |--------------------------------------------------------------------------
+        | Colis app Based Middleware
+        |--------------------------------------------------------------------------
+        */
+
+      //  'ValidProduct'  => RedirectIfNotValid::class,
+      //  'twofactor'     => TwoFactor::class,
+        //'json.response' => ForceJsonResponse::class,
+        'install'       => canInstall::class,
+       // 'update'        => canUpdate::class,
+
     ];
 }

@@ -1,6 +1,6 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
+//use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +13,22 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+
 Route::get('/', function () {
-    return view('welcome');
+
+
+
+    if (config('app.stage') == 'new') {
+        return redirect('install');
+    }
+
+    if (config('app.stage') == 'Live' && config('app.version') == '3.3.0') {
+        return redirect('update');
+    }
+
+    return redirect('login');
 });
